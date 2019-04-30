@@ -1,17 +1,13 @@
 sudo: false
+os:
+  - linux
 language: node_js
 node_js:
-  - '6'
-  - '7'
+  - '10'
+  - '12'
 install:
   - npm i npminstall && npminstall
 script:
   - npm run ci
 after_script:
   - npminstall codecov && codecov
-env:
-  global:
-    # EGG_PASSPORT_GITHUB_CLIENT_ID
-    - secure: "hNcAfXm8LTeBuLp4ib5OxE43M2v/uxdX3do4aBeFMecEs+Xa0AaAAz/T1XCvnq4OaMzS83hk3OWDzPREjhECIW1dpo2F4CVs4S/wGNuDGs8f51KVdZBUl+/t+KM/WMMAhQQXM+d6EPCYVGfWk1rcsz2lGfZTaR0UEJcCPwXl6stnoDzMmGXprK+KN6+oVs1NS3kkIB5RG1N1fm6uPCZ90hAV1pArmr3lURXSZbUTLtsx2W5amBqYh136QxW1fu8OcvBGWstTKUXf3b0Xjy2WL+umt0ai367rLfwWRyJ+z4YwgypCmzbtpHOgc0UUErxkzDHZ5o0PJtYu1XxkKR5lEvm53AySK/aeCG3eiX+N8k3Gg3E1RjMsUedue+HpDNydqipYWAUKodyg073TDSAKa1zyx2EaflbSjl32oH2vX1ZuGtJvj4TLJAZZsRbu2QcOpvOCR27zCY4bpRRp6hRqk1OWqHs2oDFV+7FXhFzli3p8ecRmAr1offe9hc0ImGkPHrGFsEhbEqoda554sdCze0IBvtGgIBK11YVxPO5nXxZxGAManlk+qUV8ggzaizD19PyZHshwLhsOCM1kK7wj3LnMO8tM96x84h8wIC5PyDMwhHYPRUwdqC2OZoxuSWXm3FSxKZYkAvhyogjkktnCWtR0EVDJQSdSDLVj1WNDulw="
-    # EGG_PASSPORT_GITHUB_CLIENT_SECRET
-    - secure: "XAO3wlDjXfT9OmI+t5ysL49gKrDgEyxYtraK/4jEUaZcdVEjxF9OlcUEhBVEXSDptLb4qgqg51UfTQGTuyTqQV6HJLVZ2Ei6FWU5HfG6ZSqgb2dKS4etQak7aIU3FsOWz0zn/dyxitpG5QJVluzvI9QiZ4mxDwsuQ0ZSR1OgWeEkZ4F/z+qSBamjxXQ1CQYjvQB93+k926Ri1612K0I5uoO0+1SZUkTkMZ/F+xVi7Q9TJm1ViZFwxmVtfhIMB5yQtA1T6SBu8dLS6cm6NKtoI2FR0PYLme5fqN07AeBlHrFQ556jBajk0amnMzaH2gzHYYlXdQb4mN6/AI5GSGt7lX92l2RTavVfAUAVfH3Y2nvMbDiWf6/m2dHlNj6pQcA5WP69pcuoooFTlNxV+AnJOKMmL+Hv0jj1HCK1gAR+kPwOnU6QsGDRt7PCraOptysAUQ23/ghMDPxzXjgAm9NVLY5hhxzspTD2mQFuizhdtFkhqEj5QhXSjrgRGtQs8+27nu2d1KTCMPAZ79O1KIKvWgawnHc9gqTFz4Zo7KcTINJhmopIsiHbQH4NqfWJWSmdPPE00ekCoYDUDAyfzn0J9wZ0vvfzPCEHoXyz3G5gpL5kP+zbNhFIO/GvcLbqMF6Cle9BKZfxL2B+/JZJlfawH7Tkdj58DuNHHHQuAxer9c8="

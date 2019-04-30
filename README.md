@@ -7,34 +7,38 @@
 [![Known Vulnerabilities][snyk-image]][snyk-url]
 [![npm download][download-image]][download-url]
 
-[npm-image]: https://img.shields.io/npm/v/egg-passport-github.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/egg-passport-github
-[travis-image]: https://img.shields.io/travis/eggjs/egg-passport-github.svg?style=flat-square
-[travis-url]: https://travis-ci.org/eggjs/egg-passport-github
-[codecov-image]: https://img.shields.io/codecov/c/github/eggjs/egg-passport-github.svg?style=flat-square
-[codecov-url]: https://codecov.io/github/eggjs/egg-passport-github?branch=master
-[david-image]: https://img.shields.io/david/eggjs/egg-passport-github.svg?style=flat-square
-[david-url]: https://david-dm.org/eggjs/egg-passport-github
-[snyk-image]: https://snyk.io/test/npm/egg-passport-github/badge.svg?style=flat-square
-[snyk-url]: https://snyk.io/test/npm/egg-passport-github
-[download-image]: https://img.shields.io/npm/dm/egg-passport-github.svg?style=flat-square
-[download-url]: https://npmjs.org/package/egg-passport-github
+[npm-image]: https://img.shields.io/npm/v/egg-passport-yuque.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/egg-passport-yuque
+[travis-image]: https://img.shields.io/travis/eggjs/egg-passport-yuque.svg?style=flat-square
+[travis-url]: https://travis-ci.org/eggjs/egg-passport-yuque
+[codecov-image]: https://img.shields.io/codecov/c/github/eggjs/egg-passport-yuque.svg?style=flat-square
+[codecov-url]: https://codecov.io/github/eggjs/egg-passport-yuque?branch=master
+[david-image]: https://img.shields.io/david/eggjs/egg-passport-yuque.svg?style=flat-square
+[david-url]: https://david-dm.org/eggjs/egg-passport-yuque
+[snyk-image]: https://snyk.io/test/npm/egg-passport-yuque/badge.svg?style=flat-square
+[snyk-url]: https://snyk.io/test/npm/egg-passport-yuque
+[download-image]: https://img.shields.io/npm/dm/egg-passport-yuque.svg?style=flat-square
+[download-url]: https://npmjs.org/package/egg-passport-yuque
 
-github passport plugin for egg
+yuque passport plugin for egg, base [YuQue's OAuth API](https://www.yuque.com/yuque/developer/about-oauth-apps).
+
+## Example
+
+See https://github.com/eggjs/examples/tree/master/passport
 
 ## Install
 
 ```bash
-$ npm i egg-passport-github --save
+$ npm i egg-passport-yuque --save
 ```
 
 ## Usage
 
 ```js
 // config/plugin.js
-exports.passportGithub = {
+exports.passportYuque = {
   enable: true,
-  package: 'egg-passport-github',
+  package: 'egg-passport-yuque',
 };
 ```
 
@@ -42,7 +46,7 @@ exports.passportGithub = {
 
 ```js
 // config/config.default.js
-exports.passportGithub = {
+exports.passportYuque = {
   key: 'your oauth key',
   secret: 'your oauth secret',
 };

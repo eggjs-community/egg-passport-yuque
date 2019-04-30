@@ -1,9 +1,9 @@
 {
-  "name": "egg-passport-github",
+  "name": "egg-passport-yuque",
   "version": "1.0.0",
-  "description": "github passport plugin for egg",
+  "description": "yuque passport plugin for egg",
   "eggPlugin": {
-    "name": "passportGithub",
+    "name": "passportYuque",
     "dependencies": [
       "passport"
     ]
@@ -13,26 +13,27 @@
     "eggPlugin",
     "egg-plugin",
     "egg-passport",
-    "passport-github"
+    "passport",
+    "passport-yuque"
   ],
   "dependencies": {
-    "debug": "^2.6.1",
-    "passport-github": "^1.1.0"
+    "debug": "^4.1.1",
+    "passport-oauth2": "^1.5.0"
   },
   "devDependencies": {
-    "autod": "^2.7.1",
-    "egg": "^0.12.0",
-    "egg-bin": "^2.2.1",
-    "egg-ci": "^1.1.0",
-    "egg-mock": "^3.0.0",
-    "egg-passport": "^1.0.0",
-    "eslint": "^3.16.0",
-    "eslint-config-egg": "^3.2.0",
-    "supertest": "^3.0.0",
-    "webstorm-disable-index": "^1.1.2"
+    "autod": "^3.1.0",
+    "egg": "^2.22.2",
+    "egg-bin": "^4.13.1",
+    "egg-ci": "^1.11.0",
+    "egg-mock": "^3.22.2",
+    "egg-passport": "^2.0.1",
+    "eslint": "^5.16.0",
+    "eslint-config-egg": "^7.3.1",
+    "supertest": "^4.0.2",
+    "webstorm-disable-index": "^1.2.0"
   },
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=10.0.0"
   },
   "scripts": {
     "test": "npm run lint -- --fix && npm run test-local",
@@ -47,16 +48,20 @@
     "config"
   ],
   "ci": {
-    "version": "6, 7"
+    "type": "travis",
+    "os": {
+      "travis": "linux"
+    },
+    "version": "10, 12"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eggjs/egg-passport-github.git"
+    "url": "git+https://github.com/eggjs-community/egg-passport-yuque.git"
   },
   "bugs": {
     "url": "https://github.com/eggjs/egg/issues"
   },
-  "homepage": "https://github.com/eggjs/egg-passport-github#readme",
+  "homepage": "https://github.com/eggjs-community/egg-passport-yuque#readme",
   "author": "fengmk2",
   "license": "MIT"
 }

@@ -3,5 +3,5 @@
 exports.passportGithub = {
   key: '',
   secret: '',
-  callbackURL: '/passport/github/callback',
+  callbackURL: '/passport/yuque/callback',
 };
