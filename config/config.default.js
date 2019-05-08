@@ -1,7 +1,7 @@
 'use strict';
 
-exports.passportGithub = {
-  key: '',
-  secret: '',
+exports.passportYuque = {
+  key: '', // your oauth key
+  secret: '', // your oauth secret
   callbackURL: '/passport/yuque/callback',
 };

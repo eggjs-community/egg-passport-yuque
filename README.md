@@ -54,6 +54,10 @@ exports.passportYuque = {
 
 see [config/config.default.js](config/config.default.js) for more detail.
 
+## APIs
+
+See egg-passport apis https://github.com/eggjs/egg-passport#apis
+
 ## Questions & Suggestions
 
 Please open an issue [here](https://github.com/eggjs/egg/issues).
