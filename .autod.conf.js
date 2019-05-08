@@ -15,13 +15,10 @@ module.exports = {
     'autod',
     'eslint',
     'eslint-config-egg',
-    'supertest',
-    'webstorm-disable-index',
   ],
   exclude: [
     './test/fixtures',
     './docs',
     './coverage',
   ],
-  registry: 'https://r.cnpmjs.org',
 };
