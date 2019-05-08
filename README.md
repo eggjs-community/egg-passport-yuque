@@ -1,4 +1,4 @@
-# egg-passport-github
+# egg-passport-yuque
 
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
@@ -65,3 +65,14 @@ Please open an issue [here](https://github.com/eggjs/egg/issues).
 ## License
 
 [MIT](LICENSE.txt)
+<!-- GITCONTRIBUTOR_START -->
+
+## Contributors
+
+|[<img src="https://avatars0.githubusercontent.com/u/156269?v=4" width="100px;"/><br/><sub><b>fengmk2</b></sub>](https://github.com/fengmk2)<br/>|[<img src="https://avatars2.githubusercontent.com/u/2127199?v=4" width="100px;"/><br/><sub><b>okoala</b></sub>](https://github.com/okoala)<br/>|
+| :---: | :---: |
+
+
+This project follows the git-contributor [spec](https://github.com/xudafeng/git-contributor), auto updated at `Wed May 08 2019 21:03:00 GMT+0800`.
+
+<!-- GITCONTRIBUTOR_END -->

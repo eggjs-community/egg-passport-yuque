@@ -11,14 +11,10 @@ module.exports = app => {
   assert(config.secret, '[egg-passport-yuque] config.passportYuque.secret required');
   config.clientID = config.key;
   config.clientSecret = config.secret;
-  // https://github.com/jaredhanson/passport-oauth2
-  // https://www.yuque.com/yuque/developer/authorizing-oauth-apps
-  config.authorizationURL = 'https://www.yuque.com/oauth2/authorize';
-  config.tokenURL = 'https://www.yuque.com/oauth2/token';
 
   // must require `req` params
   app.passport.use('yuque', new OAuth2Strategy(config, (req, accessToken, refreshToken, params, profile, done) => {
-    const url = 'https://www.yuque.com/api/v2/user';
+    const url = `${config.apiURL}/user`;
     app.httpclient.request(url, {
       headers: {
         'X-Auth-Token': accessToken,
